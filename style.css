@@ -1,0 +1,142 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  width: 70%;
+  margin: auto;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%),
+    0 3px 1px -2px rgb(0 0 0 / 20%);
+  height: auto;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+.upper-half {
+  margin-bottom: 3rem;
+}
+.upper-half h5 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+.form {
+}
+.taskInputField {
+  position: relative;
+}
+.form input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgb(97, 126, 118);
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  transition: 0.5s;
+}
+.form label {
+  position: absolute;
+  top: 0.8rem;
+  left: 0%;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+.form input:focus ~ label,
+.form input:valid ~ label {
+  top: -0.8rem;
+  left: -0.1rem;
+  font-size: 0.8rem;
+  color: #2bbbad;
+}
+
+.upper-half form input[type="submit"] {
+  display: inline-block;
+  border: none;
+  outline: none;
+  background-color: #2bbbad;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%);
+  cursor: pointer;
+  width: 10%;
+}
+.bottom {
+  margin-bottom: 1rem;
+}
+.bottom h5 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+}
+.filter-func {
+  position: relative;
+}
+.filter-func input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgb(97, 126, 118);
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  transition: 0.5s;
+}
+.filter-func label {
+  position: absolute;
+  top: 0.8rem;
+  left: 0%;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+.filter-func input:focus ~ label,
+.filter-func input:valid ~ label {
+  top: -0.8rem;
+  left: -0.1rem;
+  font-size: 0.8rem;
+  color: #2bbbad;
+}
+.collection {
+  width: 100%;
+  margin: 0.5rem 0 1rem 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.collection-item {
+  background-color: #fff;
+  line-height: 1.5rem;
+  padding: 10px 20px;
+  margin: 0;
+  font-size: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.collection .collection-item .delete-item {
+  float: right;
+  color: rgb(255, 0, 242);
+  font-size: 1rem;
+}
+.bottom button {
+  display: inline-block;
+  border: none;
+  outline: none;
+  background-color: black;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%);
+  cursor: pointer;
+}

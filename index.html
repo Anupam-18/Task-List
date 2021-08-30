@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="style.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<title>Task list </title>
+</head>
+<body>
+    <div class="container">
+        <div class="upper-half">
+            <h5 class="heading-upper-half">Task List</h5>
+            <form class="form"> 
+                <div class="taskInputField">
+                <input class="newTask" type="text" id="newTask" name="newTask" required>
+                <label for="newTask">New Task</label>
+                </div>
+                <input type="submit" id="addTaskBtn" value="Add Task">
+            </form>
+        </div>
+        <div class="bottom">
+            <h5 class="bottom-heading">Tasks</h5>
+            <div class="filter-func">
+            <input class="filter-func-input" type="text" id="filter-func-input" name="filter-task" required>
+            <label for="filter-func-input">Filter Tasks</label>
+            </div>
+            <ul class="collection"></ul>
+            <button type="button" id="clearTasks">CLEAR TASKS</button>
+        </div>
+    </div>
+</body>
+<script src="script.js">
+    
+</script>
+</html>
